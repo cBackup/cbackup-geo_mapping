@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "name": "geo_mapping",
+    "author": "cBackup Team",
+    "copyright": "Copyright (C) 2017 cBackup Team. All rights reserved.",
+    "license": "GNU Affero General Public License (AGPLv3)",
+    "authorName": "Imants Cernovs",
+    "authorEmail": "cernovs.imants@gmail.com",
+    "authorUrl": "www.cbackup.me",
+    "version": "1.0.0",
+    "compatibility": "0.0.1",
+    "description": "Plugin for collecting node geolocation via Google Maps API.",
+    "widget": "node"
+  },
+  "form" : {
+    "settings": {
+      "fields" : [
+        {
+          "type": "textInput",
+          "label": "API key",
+          "name": "api_key",
+          "default": "",
+          "description": "Your Google Maps API key.",
+          "options": {
+            "class": "form-control",
+            "required": true
+          }
+        },
+        {
+          "type": "dropDownList",
+          "label": "Location field",
+          "name": "location_field",
+          "default": "location",
+          "description": "Field which represents node location.",
+          "options": {
+            "class": "select2"
+          },
+          "values": {
+            "hostname": "Hostname",
+            "location": "Location"
+          }
+        },
+        {
+          "type": "textInput",
+          "label": "Regex",
+          "name": "location_regex",
+          "default": "",
+          "description": "Set regex if node location is in wrong format.",
+          "options": {
+            "class": "form-control"
+          }
+        },
+        {
+          "type": "textInput",
+          "label": "Excluded nodes",
+          "name": "excluded_nodes",
+          "default": "",
+          "description": "Specify node id to exclude node from geolocation collecting. Node ids must be separated by semicolon. Example: 1331;1332;1333",
+          "options": {
+            "class": "form-control",
+            "pattern": "[0-9;]*"
+          }
+        },
+        {
+          "type": "textInput",
+          "label": "Delay between requests",
+          "name": "delay_between_requests",
+          "default": "1000000",
+          "description": "Set delay between request to API. Time must be set in microseconds.",
+          "options": {
+            "class": "form-control",
+            "required": true,
+            "type": "number",
+            "min": "1"
+          }
+        },
+        {
+          "type": "toggle",
+          "label": "Show multiple info windows",
+          "name": "expand_multiple",
+          "default": "1",
+          "description": "Allow open multiple info windows in Geolocation table.",
+          "toggle": {
+            "data-on": "Yes",
+            "data-off": "No"
+          },
+          "options": {
+            "uncheck": "0"
+          }
+        },
+        {
+          "type": "toggle",
+          "label": "Debug mode",
+          "name": "debug_mode",
+          "default": "1",
+          "description": "Enable debug mode while testing geocoder API. This will limit request to API. Plugin will collect location only for first 5 nodes.",
+          "toggle": {
+            "data-on": "Yes",
+            "data-off": "No"
+          },
+          "options": {
+            "data-onstyle": "danger",
+            "uncheck": "0"
+          }
+        }
+      ]
+    },
+    "widget": {
+      "fields" : [
+        {
+          "type": "toggle",
+          "label": "Enable widget",
+          "name": "widget_enabled",
+          "default": "0",
+          "description": "Enable widget in node view page.",
+          "toggle": {
+            "data-on": "Yes",
+            "data-off": "No"
+          },
+          "options": {
+            "uncheck": "0"
+          }
+        }
+      ]
+    }
+  }
+}

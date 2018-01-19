@@ -1,0 +1,124 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e7a5c522e2c7067c543a78a289214086",
+    "packages": [
+        {
+            "name": "deka6pb/yii2-geocoder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deka6pb/yii2-geocoder.git",
+                "reference": "730fef0bad0bf521f0bd503a39d213f75a1e1ece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deka6pb/yii2-geocoder/zipball/730fef0bad0bf521f0bd503a39d213f75a1e1ece",
+                "reference": "730fef0bad0bf521f0bd503a39d213f75a1e1ece",
+                "shasum": ""
+            },
+            "require": {
+                "php-curl-class/php-curl-class": "*"
+            },
+            "require-dev": {
+                "codeception/specify": "*",
+                "codeception/verify": "*",
+                "yiisoft/yii2-codeception": "~2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "deka6pb\\geocoder\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikhail Maklashov",
+                    "email": "deka6pb@gmail.com"
+                }
+            ],
+            "description": "Yii 2 Geocoder with Yandex Geocoder API and Google Maps API",
+            "keywords": [
+                "deka6pb",
+                "geocoder",
+                "yii2",
+                "yii2-geocoder"
+            ],
+            "time": "2016-05-16 15:17:49"
+        },
+        {
+            "name": "php-curl-class/php-curl-class",
+            "version": "7.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-curl-class/php-curl-class.git",
+                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+                "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Curl\\": "src/Curl/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Zach Borboa"
+                }
+            ],
+            "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+            "homepage": "https://github.com/php-curl-class/php-curl-class",
+            "keywords": [
+                "api",
+                "class",
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "json",
+                "php",
+                "requests",
+                "rest",
+                "restful",
+                "web service",
+                "xml"
+            ],
+            "time": "2017-09-04T21:38:09+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "deka6pb/yii2-geocoder": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "name": "php-curl-class/php-curl-class",
+        "version": "7.4.0",
+        "version_normalized": "7.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-curl-class/php-curl-class.git",
+            "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-curl-class/php-curl-class/zipball/c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+            "reference": "c15f23ce5d52a4c68b69640ed6510a9d2a98ec6f",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.3"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*",
+            "squizlabs/php_codesniffer": "*"
+        },
+        "time": "2017-09-04T21:38:09+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Curl\\": "src/Curl/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "Unlicense"
+        ],
+        "authors": [
+            {
+                "name": "Zach Borboa"
+            }
+        ],
+        "description": "PHP Curl Class makes it easy to send HTTP requests and integrate with web APIs.",
+        "homepage": "https://github.com/php-curl-class/php-curl-class",
+        "keywords": [
+            "api",
+            "class",
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "json",
+            "php",
+            "requests",
+            "rest",
+            "restful",
+            "web service",
+            "xml"
+        ]
+    },
+    {
+        "name": "deka6pb/yii2-geocoder",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/deka6pb/yii2-geocoder.git",
+            "reference": "730fef0bad0bf521f0bd503a39d213f75a1e1ece"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/deka6pb/yii2-geocoder/zipball/730fef0bad0bf521f0bd503a39d213f75a1e1ece",
+            "reference": "730fef0bad0bf521f0bd503a39d213f75a1e1ece",
+            "shasum": ""
+        },
+        "require": {
+            "php-curl-class/php-curl-class": "*"
+        },
+        "require-dev": {
+            "codeception/specify": "*",
+            "codeception/verify": "*",
+            "yiisoft/yii2-codeception": "~2.0"
+        },
+        "time": "2016-05-16T15:17:49+00:00",
+        "type": "yii2-extension",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "deka6pb\\geocoder\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mikhail Maklashov",
+                "email": "deka6pb@gmail.com"
+            }
+        ],
+        "description": "Yii 2 Geocoder with Yandex Geocoder API and Google Maps API",
+        "keywords": [
+            "deka6pb",
+            "geocoder",
+            "yii2",
+            "yii2-geocoder"
+        ]
+    }
+]
