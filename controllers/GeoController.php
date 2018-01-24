@@ -29,7 +29,7 @@ use yii\web\Controller;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
 use yii\filters\AccessControl;
-use app\filters\AjaxFilter;
+use yii\filters\AjaxFilter;
 use app\modules\plugins\geomapping\models\Geolocation;
 use app\modules\plugins\geomapping\models\GeolocationSearch;
 use app\modules\plugins\geomapping\models\LogGeoSearch;
